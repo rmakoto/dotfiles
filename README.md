@@ -1,2 +1,2 @@
-# dotfiles-mac
-dotfiles-mac
+# my-dotfiles
+dotfiles
