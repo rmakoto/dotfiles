@@ -6,7 +6,7 @@
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+brew upgrade
 
 info "Installing GNU tools..."
 # Install GNU core utilities (those that come with macOS are outdated).
@@ -14,11 +14,11 @@ brew install coreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
-brew tap caskroom/cask
+brew tap homebrew/cask
 
 info "Installing Unix tools..."
 brew install git
@@ -32,7 +32,7 @@ brew install reattach-to-user-namespace
 brew install the_silver_searcher
 brew install tmux
 brew install tree
-brew install vim --HEAD --without-nls --with-override-system-vi
+brew install vim
 brew install zsh
 brew install jq
 brew install fasd
@@ -49,7 +49,7 @@ brew install rust
 brew install jenv
 
 info "Installing other useful binaries..."
-brew install imagemagick --with-webp
+brew install imagemagick
 brew install pandoc
 brew install shellcheck
 
@@ -66,12 +66,12 @@ brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
 
 info "Installing Applications"
-brew cask install iterm2
-brew cask install sourcetree
+# brew cask install iterm2
+# brew cask install sourcetree
 brew install macvim
 
 info "Installing OpenPG tools..."
-brew install gnupg gpg-agent pinentry-mac
+brew install gnupg pinentry-mac
 
 info "Installing security tools..."
 brew install dnsmasq
