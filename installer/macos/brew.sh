@@ -49,7 +49,7 @@ brew install rust
 brew install jenv
 
 info "Installing other useful binaries..."
-brew install imagemagick
+# brew install imagemagick
 brew install pandoc
 brew install shellcheck
 

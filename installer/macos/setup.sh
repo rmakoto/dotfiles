@@ -28,14 +28,14 @@ source "$DIR/brew.sh"
 # Symlink it up!
 source "$DIR/symlink.sh"
 
-# Compile ZSH-related files for faster autoloading
-source "$DOTFILES_DIR/bin/zsh-compile"
-
 # Append /usr/local/bin/zsh to the end of /etc/shells file
 grep -q -F '/usr/local/bin/zsh' /etc/shells || sudo bash -c "echo /usr/local/bin/zsh >> /etc/shells"
 
 # Make ZSH the default shell
 chsh -s "$(which zsh)"
+
+# Compile ZSH-related files for faster autoloading
+source "$DOTFILES_DIR/bin/zsh-compile"
 
 # Install fonts
 cp -f $HOME/.dotfiles/fonts/* $HOME/Library/Fonts
