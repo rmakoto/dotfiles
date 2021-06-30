@@ -4,6 +4,12 @@
 [submodule "zsh/modules/zsh-history-substring-search"]
 	path = zsh/modules/zsh-history-substring-search
 	url = https://github.com/zsh-users/zsh-history-substring-search.git
+[submodule "zsh/modules/zsh-completions"]
+	path = zsh/modules/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
+[submodule "zsh/modules/pure"]
+	path = zsh/modules/pure
+	url = https://github.com/sindresorhus/pure.git
