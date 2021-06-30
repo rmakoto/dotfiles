@@ -1,0 +1,42 @@
+# Paths
+path=(
+  /usr/local/opt/coreutils/libexec/gnubin
+  $DOTFILES/bin
+  /usr/local/bin
+  /usr/{sbin,bin}
+  /{sbin,bin}
+  /Applications/Postgres.app/Contents/Versions/latest/bin
+)
+
+cdpath=(
+  $HOME/{,code,Desktop,Downloads}
+)
+
+fpath=(
+  $DOTFILES/zsh/modules/zsh-completions
+  $DOTFILES/completions
+  $HOME/.zfunctions
+  $fpath
+)
+
+manpath=(
+  /usr/local/opt/coreutils/libexec/gnuman
+  $DOTFILES/man/man1
+)
+
+# Ensure path arrays do not contain duplicates.
+typeset -gU path cdpath fpath manpath
+
+# load rbenv if available
+if command -v rbenv >/dev/null; then
+  eval "$(rbenv init - --no-rehash)"
+fi
+
+# load nodenv if available
+if command -v nodenv >/dev/null; then
+  eval "$(nodenv init -)"
+fi
+
+. $DOTFILES/zsh/modules/z/z.sh
+
+# vim: ft=zsh sw=2 ts=2 et

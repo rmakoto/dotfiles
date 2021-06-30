@@ -1,0 +1,18 @@
+# Load plugins
+source $DOTFILES/zsh/modules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $DOTFILES/zsh/modules/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+# Load configuration files
+for file ($DOTFILES/zsh/config/*.zsh(N)); do
+  source $file
+done
+
+# Load modules files
+for file ($DOTFILES/zsh/modules/*.zsh(N)); do
+  source $file
+done
+
+unset file
+
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+[[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh

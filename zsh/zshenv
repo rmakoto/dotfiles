@@ -1,0 +1,41 @@
+# Enable a 256-color Terminal. This conditional statement ensures that the TERM
+# variable is only set outside of tmux, since tmux sets its own terminal.
+[[ -z "$TMUX" ]] && export TERM="xterm-256color"
+
+# Use vim as the visual editor
+export VISUAL='nvim'
+export EDITOR=$VISUAL
+
+# Reduce to 0.1 secs the delay after hitting the <ESC> key.
+export KEYTIMEOUT=1
+
+# The Curses based Pinentry needs a real tty device in order to work.
+export GPG_TTY=$(tty)
+
+DOTFILES="$HOME/.dotfiles"
+SHELL="/usr/local/bin/zsh"
+ZSH="$HOME/.zsh"
+ZSH_CACHE_DIR="$ZSH/cache/"
+ZSH_MODULES_DIR="$DOTFILES/zsh/modules"
+
+# According to https://github.com/Homebrew/brew/blob/master/docs/Analytics.md,
+# Homebrew gathers anonymous aggregate user behaviour analytics and reporting
+# these to Google Analytics. Opt out...
+export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_NO_INSECURE_REDIRECT=1
+export HOMEBREW_CASK_OPTS=--require-sha
+
+# Set Ag as the default source for fzf
+export FZF_DEFAULT_COMMAND='ag --hidden -g ""'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+export FZF_DEFAULT_OPTS='
+  --color fg:242,bg:239,hl:65,fg+:15,bg+:239,hl+:108
+  --color info:108,prompt:109,spinner:108,pointer:168,marker:168
+'
+export FZF_CTRL_T_OPTS="--preview 'preview {} | head -200'"
+export FZF_CTRL_R_OPTS="--preview 'echo {}'
+  --preview-window down:1:hidden:wrap
+  --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'
+  --header 'Press CTRL-Y to copy command to the pasteboard'
+  --border"
