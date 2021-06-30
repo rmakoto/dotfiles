@@ -1,8 +1,5 @@
 # Aliases in this file are bash and zsh compatible
 
-# Don't change. The following determines where YADR is installed.
-yadr=$HOME/.yadr
-
 # Get operating system
 platform='unknown'
 unamestr=$(uname)
@@ -24,8 +21,8 @@ if [[ $platform == 'linux' ]]; then
   alias ll='ls -alh --color=auto'
   alias ls='ls --color=auto'
 elif [[ $platform == 'darwin' ]]; then
-  alias ll='ls -alGh'
-  alias ls='ls -Gh'
+  alias ll='ls -alGh --color --group-directories-first'
+  alias ls='ls -Gh --color --group-directories-first'
 fi
 
 # vim using
@@ -56,7 +53,9 @@ alias gco='git co'
 alias gcp='git cp'
 alias ga='git add -A'
 alias gap='git add -p'
+alias grm='git rm --cached'
 alias guns='git unstage'
+alias gc='git commit'
 alias gunc='git uncommit'
 alias gm='git merge'
 alias gms='git merge --squash'
@@ -127,3 +126,18 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 
 # Homebrew
 alias brewu='brew update && brew upgrade && brew cleanup && brew doctor'
+
+# Global aliases
+alias -g C='| wc -l'
+alias -g H='| head'
+alias -g L="| less"
+alias -g N="| /dev/null"
+alias -g S='| sort'
+alias -g G='| grep' # now you can do: ls foo G something
+
+# Functions
+#
+# (f)ind by (n)ame
+# usage: fn foo 
+# to find all files containing 'foo' in the name
+function fn() { ls **/*$1* }
