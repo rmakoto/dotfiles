@@ -39,3 +39,6 @@ source "$DOTFILES_DIR/bin/zsh-compile"
 
 # Install fonts
 cp -f $HOME/.dotfiles/fonts/* $HOME/Library/Fonts
+
+# Install tmux tpm plugins
+$DOTFILES_DIR/tmux/plugins/tpm/bin/install_plugins
