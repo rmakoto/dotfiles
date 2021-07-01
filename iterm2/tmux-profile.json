@@ -79,7 +79,7 @@
     "Blue Component" : 0.90032327175140381
   },
   "Working Directory" : "\/Users\/makoto",
-  "Blinking Cursor" : false,
+  "Blinking Cursor" : true,
   "Disable Window Resizing" : true,
   "Sync Title" : false,
   "Prompt Before Closing 2" : false,
@@ -105,23 +105,24 @@
   "Non Ascii Font" : "Monaco 12",
   "Vertical Spacing" : 1,
   "Use Bold Font" : true,
-  "Option Key Sends" : 0,
+  "Left Option Key Changeable" : false,
   "Selected Text Color" : {
     "Green Component" : 1,
     "Red Component" : 1,
     "Blue Component" : 1
   },
+  "Option Key Sends" : 2,
   "Background Color" : {
     "Green Component" : 0.12215272337198257,
     "Red Component" : 0.11765811592340469,
     "Blue Component" : 0.15977837145328522
   },
-  "Character Encoding" : 4,
   "Ansi 11 Color" : {
     "Green Component" : 0.98039215686274506,
     "Red Component" : 0.94509803921568625,
     "Blue Component" : 0.5490196078431373
   },
+  "Character Encoding" : 4,
   "Use Italic Font" : true,
   "Unlimited Scrollback" : false,
   "Keyboard Map" : {
@@ -227,7 +228,7 @@
   },
   "Scrollback With Status Bar" : true,
   "Use Non-ASCII Font" : false,
-  "Right Option Key Sends" : 0,
+  "Right Option Key Sends" : 2,
   "Normal Font" : "MesloLGMForPowerline-Regular 15.5",
   "Ansi 6 Color" : {
     "Green Component" : 0.9137254901960784,
