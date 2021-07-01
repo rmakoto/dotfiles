@@ -1,5 +1,3 @@
 #
 # Executes commands at login post-zshrc.
 #
-
-autoload -Uz compinit

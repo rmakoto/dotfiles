@@ -62,6 +62,13 @@
 * Click the sub-tab ”Keys”
 * Remove the mappings for key combinations ⌥ + ← and ⌥ + →
 
+### Tmux
+
+#### [How to copy and paste with a mouse with tmux][3]
+* iTerm2 > Preferences > “General” tab, and in the “Selection” section, check “Applications in terminal may access clipboard”.
+
 [1]: <https://code.i-harness.com/en/q/5eaee5>
 
-[2]:<https://superuser.com/questions/800088/why-does-cmd-r-mess-up-vim-on-the-mac-what-is-it-actually-trying-to-do>
+[2]: <https://superuser.com/questions/800088/why-does-cmd-r-mess-up-vim-on-the-mac-what-is-it-actually-trying-to-do>
+
+[3]: <https://unix.stackexchange.com/questions/318281/how-to-copy-and-paste-with-a-mouse-with-tmux>
