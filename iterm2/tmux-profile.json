@@ -228,7 +228,7 @@
   "Scrollback With Status Bar" : true,
   "Use Non-ASCII Font" : false,
   "Right Option Key Sends" : 0,
-  "Normal Font" : "Menlo-RegularForPowerline 14",
+  "Normal Font" : "MesloLGMForPowerline-Regular 15.5",
   "Ansi 6 Color" : {
     "Green Component" : 0.9137254901960784,
     "Red Component" : 0.54509803921568623,
