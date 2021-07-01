@@ -2,11 +2,6 @@
 source $DOTFILES/zsh/modules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $DOTFILES/zsh/modules/zsh-history-substring-search/zsh-history-substring-search.zsh
 
-fpath+=$DOTFILES/zsh/modules/pure
-fpath+=$DOTFILES/zsh/themes
-autoload -U promptinit; promptinit
-prompt pure
-
 # Load configuration files
 for file ($DOTFILES/zsh/config/*.zsh(N)); do
   source $file
