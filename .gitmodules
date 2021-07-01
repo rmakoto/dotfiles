@@ -13,3 +13,6 @@
 [submodule "zsh/modules/pure"]
 	path = zsh/modules/pure
 	url = https://github.com/sindresorhus/pure.git
+[submodule "tmux/plugins/kube-tmux"]
+	path = tmux/plugins/kube-tmux
+	url = https://github.com/jonmosco/kube-tmux.git
