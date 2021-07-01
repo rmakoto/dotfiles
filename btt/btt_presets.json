@@ -1,0 +1,172 @@
+{
+  "BTTPresetName" : "btt_presets",
+  "BTTPresetUUID" : "BDC8105B-3471-4E60-A31D-C2D0FC0588EF",
+  "BTTPresetContent" : [
+    {
+      "BTTAppBundleIdentifier" : "BT.G",
+      "BTTAppName" : "Global",
+      "BTTAppSpecificSettings" : {
+
+      },
+      "BTTTriggers" : [
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 84,
+          "BTTPredefinedActionName" : "Restore Old Window Size",
+          "BTTAdditionalConfiguration" : "9306147",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 125,
+          "BTTShortcutModifierKeys" : 9306112,
+          "BTTOrder" : 8
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "50",
+          "BTTAdditionalConfiguration" : "8388608",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 0,
+          "BTTShortcutKeyCode" : 41,
+          "BTTShortcutModifierKeys" : 8388608,
+          "BTTOrder" : 10
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "56,50",
+          "BTTAdditionalConfiguration" : "8519680",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 0,
+          "BTTShortcutKeyCode" : 41,
+          "BTTShortcutModifierKeys" : 8519680,
+          "BTTOrder" : 9
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 20,
+          "BTTPredefinedActionName" : "Maximize Window Right",
+          "BTTAdditionalConfiguration" : "9306147",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 124,
+          "BTTShortcutModifierKeys" : 9306112,
+          "BTTOrder" : 2
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 19,
+          "BTTPredefinedActionName" : "Maximize Window Left",
+          "BTTAdditionalConfiguration" : "8912896",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 0,
+          "BTTShortcutKeyCode" : 115,
+          "BTTShortcutModifierKeys" : 8912896,
+          "BTTOrder" : 4
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 21,
+          "BTTPredefinedActionName" : "Maximize Window",
+          "BTTAdditionalConfiguration" : "8912896",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 0,
+          "BTTShortcutKeyCode" : 116,
+          "BTTShortcutModifierKeys" : 8912896,
+          "BTTOrder" : 6
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "50",
+          "BTTAdditionalConfiguration" : "0",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 0,
+          "BTTShortcutKeyCode" : 53,
+          "BTTShortcutModifierKeys" : 0,
+          "BTTOrder" : 11
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 203,
+          "BTTPredefinedActionName" : "Show Clipboard\/Pasteboard History",
+          "BTTAdditionalConfiguration" : "1179648",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 9,
+          "BTTShortcutModifierKeys" : 1179648,
+          "BTTOrder" : 0
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "56,50",
+          "BTTAdditionalConfiguration" : "131074",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 0,
+          "BTTShortcutKeyCode" : 53,
+          "BTTShortcutModifierKeys" : 131072,
+          "BTTOrder" : 12
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 84,
+          "BTTPredefinedActionName" : "Restore Old Window Size",
+          "BTTAdditionalConfiguration" : "8912896",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 0,
+          "BTTShortcutKeyCode" : 121,
+          "BTTShortcutModifierKeys" : 8912896,
+          "BTTOrder" : 7
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 20,
+          "BTTPredefinedActionName" : "Maximize Window Right",
+          "BTTAdditionalConfiguration" : "8912896",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 0,
+          "BTTShortcutKeyCode" : 119,
+          "BTTShortcutModifierKeys" : 8912896,
+          "BTTOrder" : 5
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 21,
+          "BTTPredefinedActionName" : "Maximize Window",
+          "BTTAdditionalConfiguration" : "9306147",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 126,
+          "BTTShortcutModifierKeys" : 9306112,
+          "BTTOrder" : 3
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 19,
+          "BTTPredefinedActionName" : "Maximize Window Left",
+          "BTTAdditionalConfiguration" : "9306147",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 123,
+          "BTTShortcutModifierKeys" : 9306112,
+          "BTTOrder" : 1
+        }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "com.apple.finder",
+      "BTTAppName" : "Finder",
+      "BTTTriggers" : [
+
+      ]
+    }
+  ],
+  "BTTPresetSnapAreas" : [
+
+  ]
+}
