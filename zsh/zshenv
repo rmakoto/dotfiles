@@ -28,12 +28,7 @@ export HOMEBREW_CASK_OPTS=--require-sha
 # Set Ag as the default source for fzf
 export FZF_DEFAULT_COMMAND='ag --hidden -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-
-export FZF_DEFAULT_OPTS='
-  --color fg:242,bg:239,hl:65,fg+:15,bg+:239,hl+:108
-  --color info:108,prompt:109,spinner:108,pointer:168,marker:168
-'
-export FZF_CTRL_T_OPTS="--preview 'preview {} | head -200'"
+export FZF_CTRL_T_OPTS="--preview 'bat --color=always --style=numbers --line-range=:500 {} | head -200'"
 export FZF_CTRL_R_OPTS="--preview 'echo {}'
   --preview-window down:1:hidden:wrap
   --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'

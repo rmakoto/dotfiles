@@ -25,7 +25,6 @@ brew install git
 brew install ctags
 brew install curl
 brew install diff-so-fancy
-brew install fzf
 brew install less
 brew install openssl
 brew install reattach-to-user-namespace
@@ -36,6 +35,9 @@ brew install vim
 brew install zsh
 brew install jq
 brew install fasd
+brew install bat
+brew install fzf
+$(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc
 
 info "Installing programming languages..."
 brew install python
