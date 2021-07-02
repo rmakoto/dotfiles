@@ -17,13 +17,13 @@ alias psg="ps aux | grep "
 alias df='df -h'
 alias du='du -h -d 2'
 
-if [[ $platform == 'linux' ]]; then
-  alias ll='ls -alh --color=auto'
-  alias ls='ls --color=auto'
-elif [[ $platform == 'darwin' ]]; then
-  alias ll='ls -alGh --color --group-directories-first'
-  alias ls='ls -Gh --color --group-directories-first'
-fi
+# if [[ $platform == 'linux' ]]; then
+#   alias ll='ls -alh --color=auto'
+#   alias ls='ls --color=auto'
+# elif [[ $platform == 'darwin' ]]; then
+#   alias ll='ls -alGh --color --group-directories-first'
+#   alias ls='ls -Gh --color --group-directories-first'
+# fi
 
 # vim using
 mvim --version > /dev/null 2>&1
@@ -47,6 +47,7 @@ alias gcm='git ci -m'
 alias gci='git ci'
 alias gco='git co'
 alias gc='git commit'
+alias gca='git commit --amend'
 alias gunc='git uncommit'
 alias ga='git add -A'
 alias gap='git add -p'
@@ -73,7 +74,7 @@ alias gfpm='git fetch --recurse-submodules --prune && git pull && git submodule 
 alias gcl='git clone --recurse'
 alias gb='git branch'
 alias gupdate_repos='find . -name .git -type d | xargs -n1 -I% git --git-dir=% --work-tree=%/.. fetch --all --recurse-submodules' #@mndrix
-alias gd='git diff'
+alias gd='git diff --name-only --diff-filter=d | xargs bat --diff'
 alias gdc='git diff --cached -w'
 alias gds='git diff --staged -w' # Staged and cached are the same thingz
 alias gpl='git pull'
@@ -103,6 +104,10 @@ alias l='less'
 alias lh='ls -alt | head' # see the last modified files
 alias screen='TERM=screen screen'
 alias cl='clear'
+alias cat='bat'
+alias ls="exa --group-directories-first"
+alias ll="exa -la --group-directories-first"
+alias tree="exa --tree -F"
 
 # Zippin
 alias gz='tar -zcvf'

@@ -30,12 +30,12 @@ brew install openssl
 brew install reattach-to-user-namespace
 brew install the_silver_searcher
 brew install tmux
-brew install tree
 brew install vim
 brew install zsh
 brew install jq
 brew install fasd
-brew install bat
+brew install bat # cat replacement
+brew install exa # ls and tree replacement
 brew install fzf
 $(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc
 
