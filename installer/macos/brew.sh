@@ -8,7 +8,7 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
-info "Installing GNU tools..."
+echo "Installing GNU tools..."
 # Install GNU core utilities (those that come with macOS are outdated).
 brew install coreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
@@ -20,7 +20,7 @@ brew install wget
 
 brew tap homebrew/cask
 
-info "Installing Unix tools..."
+echo "Installing Unix tools..."
 brew install git
 brew install ctags
 brew install curl
@@ -39,7 +39,7 @@ brew install bat
 brew install fzf
 $(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc
 
-info "Installing programming languages..."
+echo "Installing programming languages..."
 brew install python
 brew install pyenv
 brew install pyenv-virtualenv
@@ -50,12 +50,12 @@ brew install ruby-build
 brew install rust
 brew install jenv
 
-info "Installing other useful binaries..."
+echo "Installing other useful binaries..."
 # brew install imagemagick
 brew install pandoc
 brew install shellcheck
 
-info "Installing K8S stuff.."
+echo "Installing K8S stuff..."
 brew install kubernetes-cli
 brew install minikube
 brew install kind
@@ -67,15 +67,18 @@ brew install stern
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
 
-info "Installing Applications"
+echo "Installing themes..."
+brew install starship
+
+echo "Installing Applications"
 # brew cask install iterm2
 # brew cask install sourcetree
 brew install macvim
 
-info "Installing OpenPG tools..."
+echo "Installing OpenPG tools..."
 brew install gnupg pinentry-mac
 
-info "Installing security tools..."
+echo "Installing security tools..."
 brew install dnsmasq
 
 # Remove outdated versions from the cellar.
