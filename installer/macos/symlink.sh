@@ -14,13 +14,6 @@ ln -sf "$DOTFILES_DIR/zsh/zprofile" "$HOME/.zprofile"
 zsh_fpath="$HOME/.zfunctions"
 zsh_modules="$DOTFILES/zsh/modules"
 
-# mkdir $HOME/.zfunctions
-
-# ln -s "$DOTFILES/zsh/modules/pure/pure.zsh" "$HOME/.zfunctions/prompt_pure_setup"
-# ln -s "$DOTFILES/zsh/modules/pure/async.zsh" "$HOME/.zfunctions/async"
-
-# ln -s "$zsh_modules/z/z.sh" "$zsh_fpath/z"
-
 # man1_path="$DOTFILES/man/man1"
 
 # mkdir "$man1_path"
