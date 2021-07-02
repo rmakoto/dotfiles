@@ -52,4 +52,11 @@ ln -sf "$DOTFILES_DIR/ag/agignore" "$HOME/.agignore"
 # curl
 # ln -sf "$DOTFILES/curl/curlrc" "$HOME/.curlrc"
 
+# Starship prompt config
+if [ ! -d "$HOME/.config" ] 
+then
+    mkdir -p $HOME/.config
+fi
+ln -sf "$DOTFILES_DIR/starship-prompt/starship.toml" "$HOME/.config/starship.toml"
+
 echo "Done."

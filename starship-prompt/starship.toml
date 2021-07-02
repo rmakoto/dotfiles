@@ -1,0 +1,24 @@
+[git_status]
+format ='([\[$all_status$ahead_behind\]]($style))'
+conflicted = "="
+ahead =	"⇡${count} "
+behind = "⇣${count} "
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+untracked = "?${count} "
+stashed = "$${count} "
+modified = "!${count} "
+staged = "+${count} "
+renamed = "»${count} "
+deleted = "✘${count} "
+style =	"bold dimmed red"
+disabled = false
+
+[kubernetes]
+symbol = "⎈ "
+style = "dimmed green"
+disabled = false
+
+[aws]
+format = "on [$symbol$profile]($style) "
+style = "bold blue"
+symbol = "🅰 "
