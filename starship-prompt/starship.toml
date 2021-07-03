@@ -1,15 +1,22 @@
+[directory]
+truncation_length = 4
+truncation_symbol = "…/"
+
+[cmd_duration]
+format = " [$duration]($style) "
+
 [git_status]
 format ='([\[$all_status$ahead_behind\]]($style))'
 conflicted = "="
-ahead =	"⇡${count} "
-behind = "⇣${count} "
+ahead =	"⇡${count}"
+behind = "⇣${count}"
 diverged = "⇕⇡${ahead_count}⇣${behind_count}"
-untracked = "?${count} "
-stashed = "$${count} "
-modified = "!${count} "
-staged = "+${count} "
-renamed = "»${count} "
-deleted = "✘${count} "
+untracked = "?${count}"
+stashed = "$${count}"
+modified = "!${count}"
+staged = "+${count}"
+renamed = "»${count}"
+deleted = "✘${count}"
 style =	"bold dimmed red"
 disabled = false
 
@@ -22,3 +29,7 @@ disabled = false
 format = "on [$symbol$profile]($style) "
 style = "bold blue"
 symbol = "🅰 "
+disabled = true
+
+[gcloud]
+disabled = true
