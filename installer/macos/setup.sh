@@ -34,11 +34,12 @@ grep -q -F '/usr/local/bin/zsh' /etc/shells || sudo bash -c "echo /usr/local/bin
 # Make ZSH the default shell
 chsh -s "$(which zsh)"
 
-# Compile ZSH-related files for faster autoloading
-source "$DOTFILES_DIR/bin/zsh-compile"
-
 # Install fonts
 cp -f $HOME/.dotfiles/fonts/* $HOME/Library/Fonts
 
 # Install tmux tpm plugins
 $DOTFILES_DIR/tmux/plugins/tpm/bin/install_plugins
+
+# Compile ZSH-related files for faster autoloading
+exec zsh
+source "$DOTFILES_DIR/bin/zsh-compile"
