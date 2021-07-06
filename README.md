@@ -13,7 +13,7 @@
 * [bat](https://github.com/sharkdp/bat), a cat with super powers
 * iterm2 with [dracula theme](https://github.com/dracula/iterm)
 * a bunch of [aliases](./zsh/config/aliases.zsh) that make me type less
-* some k8s tools like [kubectx](https://github.com/ahmetb/kubectx) and [stern](https://github.com/wercker/stern)
+* some k8s tools like [kubectx](https://github.com/ahmetb/kubectx) and [stern](https://github.com/stern/stern)
 * other tools can be found [here](./installer/macos/brew.sh)
 
 ## installation
