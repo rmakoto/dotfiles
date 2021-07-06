@@ -1,35 +1,157 @@
+add_newline = true
+
 [directory]
-truncation_length = 4
+truncation_length = 1
 truncation_symbol = "…/"
+truncate_to_repo = false
+fish_style_pwd_dir_length=1
+read_only = " "
 
 [cmd_duration]
 format = " [$duration]($style) "
 
 [git_status]
-format ='([\[$all_status$ahead_behind\]]($style))'
+format = '( [\[$all_status$ahead_behind\]]($style))'
 conflicted = "="
 ahead =	"⇡${count}"
 behind = "⇣${count}"
-diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+diverged = "⇡⇣"
 untracked = "?${count}"
 stashed = "$${count}"
 modified = "!${count}"
 staged = "+${count}"
-renamed = "»${count}"
-deleted = "✘${count}"
+renamed = "${count}"
+deleted = "x${count}"
 style =	"bold dimmed red"
 disabled = false
+
+[git_branch]
+format = '[$symbol$branch]($style)'
+symbol = " "
+
+[python]
+format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
+symbol = " "
+
+[docker_context]
+symbol = " "
 
 [kubernetes]
 symbol = "⎈ "
 style = "dimmed green"
+format = '\[[$symbol$context( \($namespace\))]($style)\]'
 disabled = false
 
 [aws]
-format = "on [$symbol$profile]($style) "
+format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
 style = "bold blue"
-symbol = "🅰 "
+symbol = "  "
 disabled = true
+
+[helm]
+disabled = false
+
+[java]
+disabled = false
+symbol = " "
+
+[package]
+disabled = true
+symbol = " "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[hg_branch]
+disabled = true
+symbol = " "
+
+[dart]
+disabled = true
+symbol = " "
+
+[dotnet]
+disabled = true
+
+[elixir]
+disabled = true
+symbol = " "
+
+[elm]
+disabled = true
+symbol = " "
+
+[erlang]
+disabled = true
+
+[golang]
+disabled = true
+symbol = " "
+
+[julia]
+disabled = true
+symbol = " "
+
+[kotlin]
+disabled = true
+
+[nim]
+disabled = true
+symbol = " "
+
+[ocaml]
+disabled = true
+
+[perl]
+symbol = " "
+
+[php]
+disabled = true
+symbol = " "
+
+[purescript]
+disabled = true
+
+[swift]
+disabled = true
+symbol = "ﯣ "
+
+[zig]
+disabled = true
+
+[memory_usage]
+disabled = true
+symbol = " "
 
 [gcloud]
 disabled = true
+
+[openstack]
+disabled = true
+
+[crystal]
+disabled = true
+
+[lua]
+disabled = true
+
+[jobs]
+disabled = true
+
+[battery]
+disabled = true
+
+[time]
+disabled = true
+
+[nix_shell]
+symbol = " "
