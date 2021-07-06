@@ -24,7 +24,7 @@ echo "Installing Unix tools..."
 brew install git
 brew install ctags
 brew install curl
-brew install diff-so-fancy
+brew install git-delta
 brew install less
 brew install openssl
 brew install reattach-to-user-namespace

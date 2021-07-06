@@ -11,6 +11,7 @@
 * [the silver searcher](https://github.com/ggreer/the_silver_searcher) for
   finding things in files
 * [bat](https://github.com/sharkdp/bat), a cat with super powers
+* [delta](https://github.com/dandavison/delta), a viewer for git and diff output
 * iterm2 with [dracula theme](https://github.com/dracula/iterm)
 * a bunch of [aliases](./zsh/config/aliases.zsh) that make me type less
 * some k8s tools like [kubectx](https://github.com/ahmetb/kubectx) and [stern](https://github.com/stern/stern)

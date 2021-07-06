@@ -2,15 +2,12 @@
 # See the README for examples.
 [color]
   ui = true
+
 [color "branch"]
   current = yellow reverse
   local = yellow
   remote = green
-[color "diff"]
-  meta = yellow bold
-  frag = magenta bold
-  old = red
-  new = green
+
 [alias]
   # add
   a = add                           # add
@@ -112,10 +109,6 @@
   # 'git push' will push the current branch to its tracking branch
   # the usual default is to push all branches
   default = upstream
-[core]
-  autocrlf = false
-  editor = vim
-  excludesfile = ~/.dotfiles/git/gitignore
 [advice]
   statusHints = false
 [diff]
@@ -134,6 +127,22 @@
 	name = Rodrigo Makoto
 	email = makoto.rodrigo@gmail.com
 [pull]
-        rebase = true
+  rebase = true
 [fetch]
-        prune = true
+  prune = true
+[core]
+  pager = delta --plus-color="#333B2F" --minus-color="#382F32" --theme='Dracula'
+  autocrlf = false
+  editor = vim
+  excludesfile = ~/.dotfiles/git/gitignore
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  features = line-numbers decorations 
+  whitespace-error-style = 22 reverse
+
+[delta "decorations"]
+  file-decoration-style = none
+  hunk-header-style = omit

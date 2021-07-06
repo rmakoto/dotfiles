@@ -74,7 +74,7 @@ alias gfpm='git fetch --recurse-submodules --prune && git pull && git submodule 
 alias gcl='git clone --recurse'
 alias gb='git branch'
 alias gupdate_repos='find . -name .git -type d | xargs -n1 -I% git --git-dir=% --work-tree=%/.. fetch --all --recurse-submodules' #@mndrix
-alias gd='git diff --name-only --diff-filter=d | xargs bat --diff'
+alias gd='git diff'
 alias gdc='git diff --cached -w'
 alias gds='git diff --staged -w' # Staged and cached are the same thingz
 alias gpl='git pull'
