@@ -2,6 +2,11 @@
 #
 # Install command-line tools using Homebrew.
 
+bundleid() {
+  osascript -e "id of application \"$1\"" 2>/dev/null ||
+    { echo "$FUNCNAME: ERROR: Application with specified name not found: $1" 1>&2; return 1; }
+}
+
 # Make sure we’re using the latest Homebrew.
 brew update
 
@@ -70,10 +75,12 @@ brew install hashicorp/tap/terraform
 echo "Installing themes..."
 brew install starship
 
-echo "Installing Applications"
-# brew cask install iterm2
-# brew cask install sourcetree
-brew install macvim
+echo "Installing Applications..."
+if ! bundleid 'iterm2' &>/dev/null; then
+    brew install iterm2
+else
+    echo "iterm2 already installed"
+fi
 
 echo "Installing OpenPG tools..."
 brew install gnupg pinentry-mac
