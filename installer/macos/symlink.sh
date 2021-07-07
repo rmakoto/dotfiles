@@ -52,4 +52,7 @@ then
 fi
 ln -sf "$DOTFILES_DIR/starship-prompt/starship.toml" "$HOME/.config/starship.toml"
 
+# Add dynamic profile in iterm2
+ln -sf "$DOTFILES_DIR/iterm2/rmakoto-profile.json" "$HOME/Library/Application Support/iTerm2/DynamicProfiles/rmakoto-profile.json"
+
 echo "Done."
