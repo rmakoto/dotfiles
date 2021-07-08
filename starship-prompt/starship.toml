@@ -8,9 +8,11 @@ fish_style_pwd_dir_length=1
 read_only = " "
 
 [cmd_duration]
+disabled = false
 format = " [$duration]($style) "
 
 [git_status]
+disabled = false
 format = '( [\[$all_status$ahead_behind\]]($style))'
 conflicted = "="
 ahead =	"⇡${count}"
@@ -23,30 +25,32 @@ staged = "+${count}"
 renamed = "r${count}"
 deleted = "x${count}"
 style =	"bold dimmed red"
-disabled = false
 
 [git_branch]
+disabled = false
 format = '[$symbol$branch]($style)'
 symbol = " "
 
 [python]
+disabled = false
 format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
 symbol = " "
 
 [docker_context]
+disabled = false
 symbol = " "
 
 [kubernetes]
+disabled = true
 symbol = "⎈ "
 style = "dimmed green"
 format = '\[[$symbol$context( \($namespace\))]($style)\]'
-disabled = false
 
 [aws]
+disabled = true
 format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
 style = "bold blue"
 symbol = "  "
-disabled = true
 
 [helm]
 disabled = false
@@ -112,6 +116,7 @@ symbol = " "
 disabled = true
 
 [perl]
+disabled = true
 symbol = " "
 
 [php]
@@ -154,4 +159,5 @@ disabled = true
 disabled = true
 
 [nix_shell]
+disabled = true
 symbol = " "
