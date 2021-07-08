@@ -51,11 +51,3 @@
 * Open the “Profiles” tab
 * Click the sub-tab ”Keys”
 * Remove the mappings for key combinations ⌥ + ← and ⌥ + →
-
-## Tmux
-
-### [How to copy and paste with a mouse with tmux](https://unix.stackexchange.com/questions/318281/how-to-copy-and-paste-with-a-mouse-with-tmux)
-
-* iTerm2 > Preferences > “General” tab
-* “Selection” section
-* Check “Applications in terminal may access clipboard”.

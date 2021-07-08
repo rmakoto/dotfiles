@@ -67,4 +67,49 @@ to make this profile default:
 * click the sub-tab "keys"
 * remove the mappings for key combinations `⌥ + ←` and `⌥ + →`
 
+## tmux
+
+### shortcuts
+
+bind: `control + b` or `control + j`
+
+#### windows
+
+* create a new window: `bind + c`
+* move to next windows: `⌥ + ↑`
+* move to previous windows: `⌥ + ↓`
+* close a window or pane: `control + d`
+
+#### split window in panes
+
+* split vertically: `bind + v`
+* split horizontally: `bind + h`
+
+#### move between panes
+
+* move left: `shift + ←`
+* move down: `shift + ↓`
+* move up: `shift + ↑`
+* move right: `shift + →`
+
+#### resize panes
+
+* resize to left: `⌥ + h`
+* resize to down: `⌥ + j`
+* resize to up: `⌥ + k`
+* resize to right: `⌥ + l`
+
+### [how to copy with a mouse in tmux](https://unix.stackexchange.com/questions/318281/how-to-copy-and-paste-with-a-mouse-with-tmux)
+
+enable this config in iterm2 preferences:
+
+* iterm2 > preferences > "general" tab
+* "selection" section
+* check "applications in terminal may access clipboard"
+
+there are two ways to copy:
+
+1. `hold ⌥`, select the text with mouse and hit `⌘ + c`
+2. just select with mouse and tmux-yank will copy selected text automatically to clipboard
+
 thanks [rpereira](https://github.com/rpereira/dotfiles) for the inspiration.
