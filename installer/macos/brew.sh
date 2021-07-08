@@ -7,6 +7,7 @@ bundleid() {
     { echo "$FUNCNAME: ERROR: Application with specified name not found: $1" 1>&2; return 1; }
 }
 
+echo "Checking brew..."
 # Make sure we’re using the latest Homebrew.
 brew update
 
@@ -24,6 +25,7 @@ brew install gnu-sed
 brew install wget
 
 brew tap homebrew/cask
+brew tap hashicorp/tap
 
 echo "Installing Unix tools..."
 brew install git
@@ -56,7 +58,6 @@ brew install rust
 brew install jenv
 
 echo "Installing other useful binaries..."
-# brew install imagemagick
 brew install pandoc
 brew install shellcheck
 
@@ -68,8 +69,6 @@ brew install helm
 brew install kubectx
 brew install kube-ps1
 brew install stern
-
-brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
 
 echo "Installing themes..."
