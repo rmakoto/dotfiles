@@ -109,8 +109,8 @@ more pleasing git diff. edit [.dotfiles/git/gitconfig](./git/gitconfig) to custo
 hit `z` and partial match for recently used directory. tab completion enabled.
 
 ### [fzf](https://github.com/junegunn/fzf)+[bat](https://github.com/sharkdp/bat)
-* `control + r`: reverse command history finder
-* `control + t`: navigate through files with a preview and paste its path onto the command-line
+* `ctrl + r`: reverse command history finder
+* `ctrl + t`: navigate through files with a preview and paste its path onto the command-line
 * `alt + c`: cd into the selected directory
 
 ### [exa](https://github.com/ogham/exa)
@@ -155,19 +155,19 @@ alias grs='git reset --soft'
 
 ### shortcuts
 
-bind: `control + b` or `control + j`
+prefix: `ctrl + b` or `ctrl + j`
 
 #### windows
 
-* create a new window: `bind + c`
+* create a new window: `prefix + c`
 * move to next windows: `⌥ + ↑`
 * move to previous windows: `⌥ + ↓`
-* close a window or pane: `control + d`
+* close a window or pane: `ctrl + d`
 
 #### split window in panes
 
-* split vertically: `bind + v`
-* split horizontally: `bind + h`
+* split vertically: `prefix + v`
+* split horizontally: `prefix + h`
 
 #### move between panes
 
@@ -182,6 +182,24 @@ bind: `control + b` or `control + j`
 * resize to down: `⌥ + j`
 * resize to up: `⌥ + k`
 * resize to right: `⌥ + l`
+
+### [tmux-copycat](https://github.com/tmux-plugins/tmux-copycat)
+
+tmux plugin that reduces mouse usage
+
+* `prefix + ctrl-f` - simple file search
+* `prefix + ctrl-g` - jumping over git status files (best used after git status command)
+* `prefix + alt-h` - jumping over SHA-1/SHA-256 hashes (best used after git log command)
+* `prefix + ctrl-u` - url search (http, ftp and git urls)
+* `prefix + ctrl-d` - number search (mnemonic d, as digit)
+* `prefix + alt-i` - ip address search
+* `prefix + /` - regex search (strings work too)
+
+navigation:
+
+* `n` - jumps to the next match
+* `N` - jumps back to the previous match
+* `y` - copy selected text
 
 ### [how to copy with a mouse in tmux](https://unix.stackexchange.com/questions/318281/how-to-copy-and-paste-with-a-mouse-with-tmux)
 
