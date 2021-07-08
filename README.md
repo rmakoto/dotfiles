@@ -98,17 +98,22 @@ you can type in any part of any command from history and then press ↑ and ↓ 
 
 ### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
-it enables highlighting of commands whilst they are typed at a zsh prompt into an interactive terminal
+highlights commands while you are typing
 
 ### [delta](https://github.com/dandavison/delta)
 
-more pleasing git diff. edit [.dotfiles/git/gitconfig](./git/gitconfig) to customize it.
+more pleasing git diff
+
+edit [.dotfiles/git/gitconfig](./git/gitconfig) to customize it
 
 ### [fasd](https://github.com/clvv/fasd)
 
-hit `z` and partial match for recently used directory. tab completion enabled.
+hit `z` and partial match for recently used directory
+
+tab completion enabled.
 
 ### [fzf](https://github.com/junegunn/fzf)+[bat](https://github.com/sharkdp/bat)
+
 * `ctrl + r`: reverse command history finder
 * `ctrl + t`: navigate through files with a preview and paste its path onto the command-line
 * `alt + c`: cd into the selected directory
@@ -201,7 +206,7 @@ navigation:
 * `N` - jumps back to the previous match
 * `y` - copy selected text
 
-### [how to copy with a mouse in tmux](https://unix.stackexchange.com/questions/318281/how-to-copy-and-paste-with-a-mouse-with-tmux)
+#### [how to copy with a mouse in tmux](https://unix.stackexchange.com/questions/318281/how-to-copy-and-paste-with-a-mouse-with-tmux)
 
 enable this config in iterm2 preferences:
 
