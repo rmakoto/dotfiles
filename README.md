@@ -73,6 +73,21 @@ to make this profile default:
 
 to customize your prompt, just change [~/.dotfiles/starship-prompt/starship.toml](./starship-prompt/starship.toml). you can enable or disable any config you want, and after saving this file, the changes are applied immediatelly.
 
+### git symbols meaning
+
+```toml
+ahead = "⇡"
+behind = "⇣"
+diverged = "⇡⇣"
+modified = "!"
+untracked = "?"
+staged = "+"
+stashed = "#"
+renamed = "r"
+deleted = "x"
+conflicted = "="
+```
+
 for more configs, check [starship documentation](https://starship.rs/config/)
 
 ## tmux
