@@ -90,6 +90,67 @@ conflicted = "="
 
 for more configs, check [starship documentation](https://starship.rs/config/)
 
+## zsh
+
+### [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
+
+you can type in any part of any command from history and then press ↑ and ↓ to cycle through matches
+
+### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+
+it enables highlighting of commands whilst they are typed at a zsh prompt into an interactive terminal
+
+### [delta](https://github.com/dandavison/delta)
+
+more pleasing git diff. edit [.dotfiles/git/gitconfig](./git/gitconfig) to customize it.
+
+### [fasd](https://github.com/clvv/fasd)
+
+hit `z` and partial match for recently used directory. tab completion enabled.
+
+### [fzf](https://github.com/junegunn/fzf)+[bat](https://github.com/sharkdp/bat)
+* `control + r`: reverse command history finder
+* `control + t`: navigate through files with a preview and paste its path onto the command-line
+* `alt + c`: cd into the selected directory
+
+### [exa](https://github.com/ogham/exa)
+
+more pleasing ls and tree
+
+```bash
+alias ls="exa --group-directories-first"
+alias ll="exa -l --group-directories-first"
+alias lll="exa -la --group-directories-first"
+alias tree="exa --tree -F"
+```
+
+### git aliases
+
+find more aliases and edit them in [~/.dotfiles/zsh/config/aliases.zsh](./zsh/config/aliases.zsh)
+
+```bash
+alias gch='git checkout'
+alias gs='git status'
+alias gst='git stash'
+alias gstp='git stash pop'
+alias gsta='git stash apply'
+alias gcm='git commit -m'
+alias gc='git commit'
+alias gca='git commit --amend -v --date="$(date +%Y-%m-%dT%H:%M:%S)"'
+alias ga='git add -A'
+alias grm='git rm --cached'
+alias gl='git l'
+alias gf='git fetch'
+alias gcl='git clone --recurse'
+alias gb='git branch'
+alias gd='git diff'
+alias gpl='git pull'
+alias gp='git push'
+alias gr='git reset'
+alias grh='git reset --hard'
+alias grs='git reset --soft'
+```
+
 ## tmux
 
 ### shortcuts
