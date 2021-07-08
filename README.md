@@ -61,11 +61,11 @@ to make this profile default:
 * delete line: `⌘ + ←delete`
 * undo: `⌘ + z`
 
-### don't forget to remove the previous bindings
+### don't forget to remove the global bindings
 
-* open the "profiles" tab
-* click the sub-tab "keys"
-* remove the mappings for key combinations `⌥ + ←` and `⌥ + →`
+1. open the "profiles" tab
+2. click the sub-tab "keys"
+3. remove the mappings for key combinations `⌥ + ←` and `⌥ + →`
 
 ## starship-prompt
 
