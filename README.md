@@ -156,6 +156,10 @@ alias grh='git reset --hard'
 alias grs='git reset --soft'
 ```
 
+### .secrets file
+
+`~/.secrets` is a customizable file where you can set custom environment variables and functions to make them available locally. it is loaded everytime zsh is loaded
+
 ## tmux
 
 ### shortcuts

@@ -31,14 +31,22 @@ source "$DIR/symlink.sh"
 # Append /usr/local/bin/zsh to the end of /etc/shells file
 grep -q -F '/usr/local/bin/zsh' /etc/shells || sudo bash -c "echo /usr/local/bin/zsh >> /etc/shells"
 
-# Make ZSH the default shell
-chsh -s "$(which zsh)"
-
 # Install fonts
 cp -f $HOME/.dotfiles/fonts/* $HOME/Library/Fonts
 
 # Install tmux tpm plugins
 $DOTFILES_DIR/tmux/plugins/tpm/bin/install_plugins
+
+# Create ~/.secrets file
+if [ ! -e "$HOME/.secrets" ]; then
+  touch $HOME/.secrets
+  echo "# Here you can set custom environment variables and functions to make them available locally" >> $HOME/.secrets
+  echo "# They are loaded everytime zsh is loaded" >> $HOME/.secrets
+fi
+
+# Make ZSH the default shell
+echo "Prompt your password to make ZSH your default shell"
+chsh -s "$(which zsh)"
 
 # Compile ZSH-related files for faster autoloading
 exec zsh
