@@ -34,3 +34,7 @@ export FZF_CTRL_R_OPTS="--preview 'echo {}'
   --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'
   --header 'Press CTRL-Y to copy command to the pasteboard'
   --border"
+
+# Customizing forgit
+export FORGIT_LOG_GRAPH_ENABLE=false
+ 
