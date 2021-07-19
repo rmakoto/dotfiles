@@ -5,3 +5,6 @@ __git_files () {
 
 # Load forgit
 source $HOME/.dotfiles/zsh/modules/forgit/forgit.plugin.zsh
+
+# Customizing forgit
+export FORGIT_LOG_GRAPH_ENABLE=false
