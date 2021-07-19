@@ -2,3 +2,6 @@
 __git_files () {
     _wanted files expl 'local files' _files
 }
+
+# Load forgit
+source $HOME/.dotfiles/zsh/modules/forgit/forgit.plugin.zsh
