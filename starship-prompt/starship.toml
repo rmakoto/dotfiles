@@ -1,3 +1,58 @@
+format = """
+$time\
+$username\
+$hostname\
+$shlvl\
+$kubernetes\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$hg_branch\
+$docker_context\
+$package\
+$cmake\
+$dart\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$helm\
+$java\
+$julia\
+$kotlin\
+$nim\
+$nodejs\
+$ocaml\
+$perl\
+$php\
+$purescript\
+$python\
+$ruby\
+$rust\
+$swift\
+$terraform\
+$vagrant\
+$zig\
+$nix_shell\
+$conda\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$env_var\
+$crystal\
+$custom\
+$cmd_duration\
+$line_break\
+$lua\
+$jobs\
+$battery\
+$status\
+$character"""
+
 add_newline = true
 
 [directory]
@@ -47,10 +102,10 @@ style = "dimmed green"
 format = '\[[$symbol$context( \($namespace\))]($style)\]'
 
 [aws]
-disabled = true
-format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
+disabled = false
+format = ' [$symbol($profile)]($style)'
 style = "bold blue"
-symbol = "  "
+symbol = " "
 
 [helm]
 disabled = false
@@ -156,8 +211,14 @@ disabled = true
 disabled = true
 
 [time]
-disabled = true
+disabled = false
+format = '[\[$time\]]($style) '
+style = 'dimmed purple'
+time_format = "%R"
 
 [nix_shell]
 disabled = true
 symbol = " "
+
+[terraform]
+disabled = true
