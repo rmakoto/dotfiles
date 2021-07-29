@@ -13,3 +13,6 @@
 [submodule "tmux/plugins/kube-tmux"]
 	path = tmux/plugins/kube-tmux
 	url = https://github.com/jonmosco/kube-tmux.git
+[submodule "zsh/modules/forgit"]
+	path = zsh/modules/forgit
+	url = https://github.com/rmakoto/forgit.git
