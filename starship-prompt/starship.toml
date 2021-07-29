@@ -68,7 +68,7 @@ format = " [$duration]($style) "
 
 [git_status]
 disabled = false
-format = '( [\[$all_status$ahead_behind\]]($style))'
+format = '([\[$all_status$ahead_behind\]]($style)) '
 conflicted = "="
 ahead =	"⇡${count}"
 behind = "⇣${count}"
@@ -83,7 +83,7 @@ style =	"bold dimmed red"
 
 [git_branch]
 disabled = false
-format = '[$symbol$branch]($style)'
+format = '[$symbol$branch]($style) '
 symbol = " "
 
 [python]
@@ -103,8 +103,8 @@ format = '\[[$symbol$context( \($namespace\))]($style)\]'
 
 [aws]
 disabled = false
-format = ' [$symbol($profile)]($style)'
-style = "bold blue"
+format = '[$symbol($profile)]($style)'
+style = "bold dimmed blue"
 symbol = " "
 
 [helm]
@@ -122,10 +122,10 @@ symbol = " "
 symbol = " "
 
 [rust]
-symbol = " "
+symbol = ""
 
 [scala]
-symbol = " "
+symbol = ""
 
 [conda]
 symbol = " "
@@ -136,61 +136,61 @@ symbol = " "
 
 [dart]
 disabled = true
-symbol = " "
+symbol = ""
 
 [dotnet]
 disabled = true
 
 [elixir]
 disabled = true
-symbol = " "
+symbol = ""
 
 [elm]
 disabled = true
-symbol = " "
+symbol = ""
 
 [erlang]
 disabled = true
 
 [golang]
 disabled = true
-symbol = " "
+symbol = ""
 
 [julia]
 disabled = true
-symbol = " "
+symbol = ""
 
 [kotlin]
 disabled = true
 
 [nim]
 disabled = true
-symbol = " "
+symbol = ""
 
 [ocaml]
 disabled = true
 
 [perl]
 disabled = true
-symbol = " "
+symbol = ""
 
 [php]
 disabled = true
-symbol = " "
+symbol = ""
 
 [purescript]
 disabled = true
 
 [swift]
 disabled = true
-symbol = "ﯣ "
+symbol = "ﯣ"
 
 [zig]
 disabled = true
 
 [memory_usage]
 disabled = true
-symbol = " "
+symbol = ""
 
 [gcloud]
 disabled = true
@@ -218,7 +218,7 @@ time_format = "%R"
 
 [nix_shell]
 disabled = true
-symbol = " "
+symbol = ""
 
 [terraform]
 disabled = true
