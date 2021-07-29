@@ -143,3 +143,7 @@
 [delta "decorations"]
   file-decoration-style = none
   hunk-header-style = omit
+
+[credential]
+  helper = osxkeychain
+  useHttpPath = true
