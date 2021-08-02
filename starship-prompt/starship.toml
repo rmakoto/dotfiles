@@ -64,7 +64,7 @@ read_only = " "
 
 [cmd_duration]
 disabled = false
-format = " [$duration]($style) "
+format = "[$duration]($style) "
 
 [git_status]
 disabled = false
@@ -88,8 +88,9 @@ symbol = " "
 
 [python]
 disabled = false
-format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
 symbol = " "
+style = "dimmed yellow"
+format = '[${symbol}${pyenv_prefix}(${version}) (\($virtualenv\))]($style) '
 
 [docker_context]
 disabled = false
@@ -99,11 +100,11 @@ symbol = " "
 disabled = true
 symbol = "⎈ "
 style = "dimmed green"
-format = '\[[$symbol$context( \($namespace\))]($style)\]'
+format = '\[[$symbol$context( \($namespace\))]($style)\] '
 
 [aws]
 disabled = false
-format = '[$symbol($profile)]($style)'
+format = '[$symbol($profile)]($style) '
 style = "bold dimmed blue"
 symbol = " "
 
