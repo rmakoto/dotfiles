@@ -93,7 +93,7 @@ style = "dimmed yellow"
 format = '[${symbol}${pyenv_prefix}(${version}) (\($virtualenv\))]($style) '
 
 [docker_context]
-disabled = false
+disabled = true
 symbol = " "
 
 [kubernetes]
