@@ -60,6 +60,7 @@ brew install jenv
 echo "Installing other useful binaries..."
 brew install pandoc
 brew install shellcheck
+brew install qlstephen # QuickLook plugin to preview yaml, json, etc
 
 echo "Installing K8S stuff..."
 brew install kubernetes-cli
