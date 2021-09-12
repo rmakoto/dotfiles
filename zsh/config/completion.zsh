@@ -23,7 +23,7 @@ zstyle ':completion:*:cd:*' tag-order local-directories directory-stack path-dir
 
 zstyle ':completion:*:paths' accept-exact '*(N)'
 zstyle ':completion::complete:*' use-cache 1
-zstyle ':completion::complete:*' cache-path $ZSH_CACHE_DIR
+zstyle ':completion::complete:*' cache-path $ZSH_CACHE_DIR/
 
 # Don't complete uninteresting users
 zstyle ':completion:*:*:*:users' ignored-patterns \

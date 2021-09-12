@@ -15,8 +15,11 @@ export GPG_TTY=$(tty)
 DOTFILES="$HOME/.dotfiles"
 SHELL="/usr/local/bin/zsh"
 ZSH="$HOME/.zsh"
-ZSH_CACHE_DIR="$ZSH/cache/"
 ZSH_MODULES_DIR="$DOTFILES/zsh/modules"
+
+if [[ -z "$ZSH_CACHE_DIR" ]]; then
+  ZSH_CACHE_DIR="$ZSH/cache"
+fi
 
 # According to https://github.com/Homebrew/brew/blob/master/docs/Analytics.md,
 # Homebrew gathers anonymous aggregate user behaviour analytics and reporting
