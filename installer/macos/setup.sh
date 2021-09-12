@@ -51,3 +51,6 @@ chsh -s "$(which zsh)"
 # Compile ZSH-related files for faster autoloading
 exec zsh
 source "$DOTFILES_DIR/bin/zsh-compile"
+
+# Create cache folder
+mkdir -p $HOME/.zsh/cache
