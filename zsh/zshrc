@@ -14,7 +14,5 @@ done
 
 unset file
 
-[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
-[[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
-
-cd $HOME
+# Load forgit
+[[ -f $HOME/.dotfiles/zsh/modules/forgit/forgit.plugin.zsh ]] && source $HOME/.dotfiles/zsh/modules/forgit/forgit.plugin.zsh
