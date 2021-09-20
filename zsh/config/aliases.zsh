@@ -42,11 +42,9 @@ alias l='less'
 alias lh='ls -alt | head' # see the last modified files
 alias screen='TERM=screen screen'
 alias cl='clear'
-alias cat='bat'
-#alias cat='bat --style="plain"'
+alias cat='bat --style="plain"'
 alias ls="exa --group-directories-first"
-alias ll="exa -l --group-directories-first"
-alias lll="exa -la --group-directories-first"
+alias ll="exa -la --group-directories-first"
 alias tree="exa --tree -F"
 
 # Zippin
