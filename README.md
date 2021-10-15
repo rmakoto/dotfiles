@@ -169,8 +169,8 @@ prefix: `ctrl + b` or `ctrl + j`
 #### windows
 
 * create a new window: `prefix + c`
-* move to next windows: `⌥ + ↑`
-* move to previous windows: `⌥ + ↓`
+* move to next windows: `⌥ + →`
+* move to previous windows: `⌥ + ←`
 * close a window or pane: `ctrl + d`
 
 #### split window in panes
@@ -180,10 +180,10 @@ prefix: `ctrl + b` or `ctrl + j`
 
 #### move between panes
 
-* move left: `shift + ←`
-* move down: `shift + ↓`
-* move up: `shift + ↑`
-* move right: `shift + →`
+* move left: `shift + ⌥ + h`
+* move down: `shift + ⌥ + j`
+* move up: `shift + ⌥ + k`
+* move right: `shift + ⌥ + l`
 
 #### resize panes
 
