@@ -128,21 +128,34 @@
 [fetch]
   prune = true
 [core]
-  pager = delta --plus-color="#333B2F" --minus-color="#382F32" --theme='Dracula'
+#test
+  pager = delta
   autocrlf = false
   editor = vim
   excludesfile = ~/.dotfiles/git/gitignore
 
 [interactive]
-  diffFilter = delta --color-only
+  diffFilter = delta --color-only --diff-so-fancy
 
 [delta]
-  features = line-numbers decorations 
+  features = unobtrusive-line-numbers decorations 
   whitespace-error-style = 22 reverse
+  minus-style = red bold "#382F32"
+  plus-style = green bold "#333B2F"
 
 [delta "decorations"]
   file-decoration-style = none
   hunk-header-style = omit
+
+[delta "unobtrusive-line-numbers"]
+  line-numbers = true
+  line-numbers-minus-style = "#444444"
+  line-numbers-zero-style = "#444444"
+  line-numbers-plus-style = "#444444"
+  line-numbers-left-format = "{nm:>4}┊"
+  line-numbers-right-format = "{np:>4}│"
+  line-numbers-left-style = blue
+  line-numbers-right-style = blue
 
 [credential]
   helper = osxkeychain
