@@ -95,5 +95,5 @@ brew install dnsmasq
 brew cleanup
 
 # Importing plist files
-cp plist/org.p0deje.Maccy.plist $HOME/Library/Containers/org.p0deje.Maccy/Data/Library/Preferences/org.p0deje.Maccy.plist
-cp plist/com.knollsoft.Rectangle.plist $HOME/Library/Preferences/com.knollsoft.Rectangle.plist
+defaults import $HOME/Library/Containers/org.p0deje.Maccy/Data/Library/Preferences/org.p0deje.Maccy.plist plist/org.p0deje.Maccy.plist
+defaults import $HOME/Library/Preferences/com.knollsoft.Rectangle.plist plist/com.knollsoft.Rectangle.plist
