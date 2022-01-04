@@ -93,3 +93,7 @@ brew install dnsmasq
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+# Importing plist files
+cp plist/org.p0deje.Maccy.plist $HOME/Library/Containers/org.p0deje.Maccy/Data/Library/Preferences/org.p0deje.Maccy.plist
+cp plist/com.knollsoft.Rectangle.plist $HOME/Library/Preferences/com.knollsoft.Rectangle.plist
