@@ -44,7 +44,7 @@ alias gfpd='git fetch --recurse-submodules --prune && git pull origin develop &&
 alias gfpm='git fetch --recurse-submodules --prune && git pull && git submodule update --recursive --remote'
 alias gcl='git clone --recurse'
 alias gb='git branch'
-alias gupdate_repos='find . -name .git -type d | xargs -n1 -I% git --git-dir=% --work-tree=%/.. fetch --all --recurse-submodules' #@mndrix
+alias gupdate='find . -name .git -type d | xargs -n1 -I% git --git-dir=% --work-tree=%/.. fetch --all --recurse-submodules' #@mndrix
 alias gd='git diff'
 alias gdc='git diff --cached -w'
 alias gds='git diff --staged -w' # Staged and cached are the same thingz
@@ -66,4 +66,4 @@ alias gsu='git submodule update --init --recursive' # add submodules after git c
 alias gt='git t'
 alias gbg='git bisect good'
 alias gbb='git bisect bad'
-alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+alias gprune='git fetch -p && for branch in $(git for-each-ref --format '%(refname) %(upstream:track)' refs/heads | awk '$2 == "[gone]" {sub("refs/heads/", "", $1); print $1}'); do git branch -D $branch; done'
