@@ -20,8 +20,6 @@ alias gco='git co'
 alias gc='git commit'
 alias gca='git commit --amend -v --date="$(date +%Y-%m-%dT%H:%M:%S)"'
 alias gunc='git uncommit'
-alias ga='git add -A'
-alias gap='git add -p'
 alias guns='git unstage'
 alias grm='git rm --cached'
 alias gcp='git cp'
@@ -50,6 +48,7 @@ alias gdc='git diff --cached -w'
 alias gds='git diff --staged -w' # Staged and cached are the same thingz
 alias gpl='git pull'
 alias gplr='git pull --rebase'
+alias gpull-all="find . -maxdepth 3 -name '.git' -prune | rev | cut -c 6- | rev | parallel --eta 'echo {} && git -C {} pull'"
 alias gp='git push'
 alias gpsh='git push -u origin `git rev-parse --abbrev-ref HEAD`'
 alias gnb='git nb' # new branch aka checkout -b
@@ -66,4 +65,7 @@ alias gsu='git submodule update --init --recursive' # add submodules after git c
 alias gt='git t'
 alias gbg='git bisect good'
 alias gbb='git bisect bad'
-alias gprune='git fetch -p && for branch in $(git for-each-ref --format '%(refname) %(upstream:track)' refs/heads | awk '$2 == "[gone]" {sub("refs/heads/", "", $1); print $1}'); do git branch -D $branch; done'
+
+function gbprune { #https://stackoverflow.com/questions/7726949/remove-tracking-branches-no-longer-on-remote
+    git fetch -p && for branch in $(git for-each-ref --format '%(refname) %(upstream:track)' refs/heads | awk '$2 == "[gone]" {sub("refs/heads/", "", $1); print $1}'); do git branch -D $branch; done
+}
