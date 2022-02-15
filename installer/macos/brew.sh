@@ -44,6 +44,7 @@ brew install fasd
 brew install bat # cat replacement
 brew install exa # ls and tree replacement
 brew install fzf
+brew install parallel
 $(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc --no-bash --no-fish --bin
 
 echo "Installing programming languages..."
