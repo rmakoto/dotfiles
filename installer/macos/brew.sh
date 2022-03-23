@@ -45,6 +45,7 @@ brew install bat # cat replacement
 brew install exa # ls and tree replacement
 brew install fzf
 brew install parallel
+brew install gh
 $(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc --no-bash --no-fish --bin
 
 echo "Installing programming languages..."
@@ -57,6 +58,7 @@ brew install rbenv
 brew install ruby-build
 brew install rust
 brew install jenv
+brew install hashicorp/tap/terraform
 
 echo "Installing other useful binaries..."
 brew install pandoc
@@ -71,7 +73,6 @@ brew install helm
 brew install kubectx
 brew install kube-ps1
 brew install stern
-brew install hashicorp/tap/terraform
 
 echo "Installing themes..."
 brew install starship
