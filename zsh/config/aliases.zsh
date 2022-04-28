@@ -46,6 +46,7 @@ alias cat='bat --style="plain"'
 alias ls="exa --group-directories-first"
 alias ll="exa -la --group-directories-first"
 alias tree="exa --tree -F"
+alias o='open'
 
 # Zippin
 alias gz='tar -zcvf'
