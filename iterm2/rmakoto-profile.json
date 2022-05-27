@@ -59,7 +59,7 @@
       "HotKey Key Code": 49,
       "HotKey Modifier Activation": 0,
       "HotKey Window Dock Click Action": 0,
-      "HotKey Window AutoHides": true,
+      "HotKey Window AutoHides": false,
       "HotKey Window Animates": true,
       "HotKey Modifier Flags": 262144,
       "HotKey Activated By Modifier": false,
