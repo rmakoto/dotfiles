@@ -1,14 +1,12 @@
-# Enable kubectl autocompletion
-if (( $+commands[kubectl] )); then
-    __KUBECTL_COMPLETION_FILE="${ZSH_CACHE_DIR}/kubectl_completion"
+#!/usr/bin/env zsh
 
-    if [[ ! -f $__KUBECTL_COMPLETION_FILE || ! -s $__KUBECTL_COMPLETION_FILE ]]; then
-        kubectl completion zsh >! $__KUBECTL_COMPLETION_FILE
-    fi
-
-    [[ -f $__KUBECTL_COMPLETION_FILE ]] && source $__KUBECTL_COMPLETION_FILE
-
-    unset __KUBECTL_COMPLETION_FILE
+# https://frederic-hemberger.de/notes/shell/speed-up-initial-zsh-startup-with-lazy-loading/
+if [ "${commands[kubectl]}" ]; then
+  kubectl() {
+    unfunction "$0"
+    source <(kubectl completion zsh)
+    $0 "$@"
+  }
 fi
 
 alias kc='kubectx'

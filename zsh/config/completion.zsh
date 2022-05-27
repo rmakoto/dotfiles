@@ -1,5 +1,10 @@
 # Load and initialize the completion system ignoring insecure directories.
-autoload -Uz compinit && compinit -i
+# autoload -Uz compinit && compinit -i
+autoload -Uz compinit
+for dump in ~/.zcompdump(N.mh+24); do
+  compinit
+done
+compinit -C
 
 unsetopt FLOWCONTROL
 unsetopt MENU_COMPLETE

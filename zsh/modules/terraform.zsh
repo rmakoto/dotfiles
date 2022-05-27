@@ -1,7 +1,12 @@
 # https://github.com/macunha1/zsh-terraform/blob/master/terraform.zsh
 # Terraform autocompletion
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C $(which terraform) terraform
+autoload -Uz compinit
+for dump in ~/.zcompdump(N.mh+24); do
+  compinit
+done
+compinit -C
+complete -o nospace -C /usr/local/bin/terraform terraform
 
 tf_prompt_info() {
 	# dont show 'default' workspace in home dir
