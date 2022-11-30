@@ -2,8 +2,8 @@
 
 # Variables
 HISTFILE="$HOME/.zhistory"       # The path to the history file.
-HISTSIZE=100000                   # The maximum number of events to save in the internal history.
-SAVEHIST=100000                   # The maximum number of events to save in the history file.
+HISTSIZE=500000                   # The maximum number of events to save in the internal history.
+SAVEHIST=500000                   # The maximum number of events to save in the history file.
 
 # Options
 setopt EXTENDED_HISTORY          # Write the history file in the ':start:elapsed;command' format.
@@ -17,3 +17,11 @@ setopt HIST_IGNORE_SPACE         # Do not record an event starting with a space.
 setopt HIST_SAVE_NO_DUPS         # Do not write a duplicate event to the history file.
 setopt HIST_VERIFY               # Do not execute immediately upon history expansion.
 setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before adding to the history list.
+
+# zhistory backup
+if [ $(stat -c%s "$HISTFILE") -gt 64000 ]; then
+    cp -f $HISTFILE $HOME/.zsh/backup/zhistory_$(date +\%Y_\%m_\%d).bak
+fi
+
+# Delete zhistory backup files older than 30 days
+find $HISTFILE -name "*.bak" -type f -mtime +30 -delete
