@@ -73,6 +73,7 @@ brew install helm
 brew install kubectx
 brew install kube-ps1
 brew install stern
+brew install derailed/k9s/k9s
 
 echo "Installing themes..."
 brew install starship

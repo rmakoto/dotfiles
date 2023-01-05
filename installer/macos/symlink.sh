@@ -55,4 +55,8 @@ ln -sf "$DOTFILES/starship-prompt/starship.toml" "$HOME/.config/starship.toml"
 # Add dynamic profile in iterm2
 ln -sf "$DOTFILES/iterm2/rmakoto-profile.json" "$HOME/Library/Application Support/iTerm2/DynamicProfiles/rmakoto-profile.json"
 
+# k9s
+ln -sf "$DOTFILES/k9s/plugin.yml" "$HOME/Library/Application Support/k9s/plugin.yml"
+ln -sf "$DOTFILES/k9s/dracula_skin.yml" "$HOME/Library/Application Support/k9s/skin.yml"
+
 echo "Done."
