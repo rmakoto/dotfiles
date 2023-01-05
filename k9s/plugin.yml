@@ -1,34 +1,17 @@
 plugin:
-  # See https://k9scli.io/topics/plugins/
-  raw-logs-follow:
+  # Leverage stern (https://github.com/wercker/stern) to output logs.
+  stern:
     shortCut: Ctrl-L
-    description: logs -f
+    confirm: false
+    description: "Logs <Stern>"
     scopes:
-      - po
-    command: kubectl
+      - pods
+    command: stern
     background: false
     args:
-      - logs
-      - -f
-      - $NAME
-      - -n
-      - $NAMESPACE
-      - --context
-      - $CONTEXT
-  log-less:
-    shortCut: Shift-L
-    description: "logs|less"
-    scopes:
-      - po
-    command: bash
-    background: false
-    args:
-      - -c
-      - '"$@" | less'
-      - dummy-arg
-      - kubectl
-      - logs
-      - $NAME
+      - --template 
+      - '[{{color .ContainerColor .ContainerName}}] {{.Message}}{{"\n"}}'
+      - $FILTER
       - -n
       - $NAMESPACE
       - --context
