@@ -9,7 +9,7 @@ plugin:
     command: stern
     background: false
     args:
-      - --template 
+      - --template
       - '[{{color .ContainerColor .ContainerName}}] {{.Message}}{{"\n"}}'
       - $FILTER
       - -n

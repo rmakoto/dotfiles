@@ -39,7 +39,7 @@ alias gfp='git fetch --prune'
 alias gfa='git fetch --all'
 alias gfap='git fetch --all --prune'
 alias gfpd='git fetch --recurse-submodules --prune && git pull origin develop && git submodule update --recursive --remote'
-alias gfpm='git fetch --recurse-submodules --prune && git pull && git submodule update --recursive --remote'
+alias gfpm='git stash && git fetch --recurse-submodules --prune && git pull && git submodule update --recursive --remote'
 alias gcl='git clone --recurse'
 alias gb='git branch'
 alias gupdate='find . -name .git -type d | xargs -n1 -I% git --git-dir=% --work-tree=%/.. fetch --all --recurse-submodules' #@mndrix
