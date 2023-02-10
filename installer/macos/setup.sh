@@ -54,3 +54,6 @@ source "$DOTFILES_DIR/bin/zsh-compile"
 
 # Create cache folder
 mkdir -p $HOME/.zsh/cache
+
+# Create backup folder
+mkdir -p $HOME/.zsh/backup
