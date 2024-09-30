@@ -11,6 +11,8 @@ export FZF_CTRL_R_OPTS="--preview 'echo {}'
   --header 'Press CTRL-Y to copy command to the pasteboard'
   --border"
 
+export FORGIT_FZF_DEFAULT_OPTS="--preview-window=up:70% --height=85%"
+
 if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
   export PATH="${PATH:+${PATH}:}/usr/local/opt/fzf/bin"
 fi
