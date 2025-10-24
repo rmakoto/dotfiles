@@ -1,5 +1,10 @@
-#
+
 # only init if installed.
+
+if [[ ! "$PATH" == */usr/local/bin/fasd* ]]; then
+  export PATH="${PATH:+${PATH}:}/usr/local/bin/fasd"
+fi
+
 fasd_cache="$HOME/.fasd-init-bash"
 if [ "$(command -v fasd)" -nt "$fasd_cache" -o ! -s "$fasd_cache" ]; then
   eval "$(fasd --init posix-alias zsh-hook zsh-ccomp zsh-ccomp-install zsh-wcomp zsh-wcomp-install)" >| "$fasd_cache"

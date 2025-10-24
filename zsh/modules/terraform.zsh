@@ -6,7 +6,7 @@ for dump in ~/.zcompdump(N.mh+24); do
   compinit
 done
 compinit -C
-complete -o nospace -C /usr/local/bin/terraform terraform
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
 tf_prompt_info() {
 	# dont show 'default' workspace in home dir

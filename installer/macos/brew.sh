@@ -40,9 +40,8 @@ brew install tmux
 brew install vim
 brew install zsh
 brew install jq
-brew install fasd
 brew install bat # cat replacement
-brew install exa # ls and tree replacement
+brew install eza # ls and tree replacement
 brew install fzf
 brew install parallel
 brew install gh

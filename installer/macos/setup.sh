@@ -28,8 +28,8 @@ source "$DIR/brew.sh"
 # Symlink it up!
 source "$DIR/symlink.sh"
 
-# Append /usr/local/bin/zsh to the end of /etc/shells file
-grep -q -F '/usr/local/bin/zsh' /etc/shells || sudo bash -c "echo /usr/local/bin/zsh >> /etc/shells"
+# Append /opt/homebrew/bin/zsh to the end of /etc/shells file
+grep -q -F '/opt/homebrew/bin/zsh' /etc/shells || sudo bash -c "echo /opt/homebrew/bin/zsh >> /etc/shells"
 
 # Install fonts
 cp -f $HOME/.dotfiles/fonts/* $HOME/Library/Fonts

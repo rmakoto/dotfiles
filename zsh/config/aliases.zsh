@@ -43,9 +43,9 @@ alias lh='ls -alt | head' # see the last modified files
 alias screen='TERM=screen screen'
 alias cl='clear'
 alias cat='bat --style="plain"'
-alias ls="exa --group-directories-first"
-alias ll="exa -la --group-directories-first"
-alias tree="exa --tree -F"
+alias ls="eza --group-directories-first"
+alias ll="eza -la --group-directories-first"
+alias tree="eza --tree -F"
 alias o='open'
 
 # Zippin
