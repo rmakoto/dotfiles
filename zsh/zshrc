@@ -16,6 +16,3 @@ unset file
 
 # Load forgit
 [[ -f $HOME/.dotfiles/zsh/modules/forgit/forgit.plugin.zsh ]] && source $HOME/.dotfiles/zsh/modules/forgit/forgit.plugin.zsh
-
-# Added by Docker Desktop
-source $HOME/.docker/init-zsh.sh || true
