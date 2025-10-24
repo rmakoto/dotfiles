@@ -88,6 +88,7 @@ fi
 
 brew install --cask maccy # clipboard manager app
 brew install --cask rectangle # windows manager app
+brew install --cask visual-studio-code
 
 echo "Installing OpenPG tools..."
 brew install gnupg pinentry-mac

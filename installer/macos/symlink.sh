@@ -59,4 +59,7 @@ ln -sf "$DOTFILES/iterm2/rmakoto-profile.json" "$HOME/Library/Application Suppor
 ln -sf "$DOTFILES/k9s/plugin.yml" "$HOME/Library/Application Support/k9s/plugin.yml"
 ln -sf "$DOTFILES/k9s/dracula_skin.yml" "$HOME/Library/Application Support/k9s/skin.yml"
 
+# vscode
+ln -s "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" /opt/homebrew/bin/code
+
 echo "Done."
