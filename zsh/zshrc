@@ -15,4 +15,10 @@ done
 unset file
 
 # Load forgit
-[[ -f $HOME/.dotfiles/zsh/modules/forgit/forgit.plugin.zsh ]] && source $HOME/.dotfiles/zsh/modules/forgit/forgit.plugin.zsh
+[[ -f $HOME/.dotfiles/zsh/modules/forgit/forgit.plugin.zsh ]] && source $HOME/.dotfiles/zsh/modules/forgit/forgit.plugin.zsh export PATH="/opt/homebrew/bin:$PATH"
+
+# Load homebrew bin
+export PATH="/opt/homebrew/bin:$PATH"
+
+# Load local bin (claude)
+export PATH="$HOME/.local/bin:$PATH"
